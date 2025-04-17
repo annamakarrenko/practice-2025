@@ -1,0 +1,7 @@
+baseURL = 'https://practice-2025.github.io/practice-2025/'
+languageCode = 'ru-ru'
+title = 'Уникальная социальная сеть на основе MBTI'
+theme   =   'ananke' 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
