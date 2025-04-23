@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Уникальная социальная сеть на основе MBTI</title>
-    <link>http://localhost:1313/practice-2025/posts/</link>
+    <link>https://practice-2025.github.io/practice-2025/posts/</link>
     <description>Recent content in Posts on Уникальная социальная сеть на основе MBTI</description>
     <generator>Hugo</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Thu, 17 Apr 2025 01:42:42 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/practice-2025/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Первый пост</title>
-      <link>http://localhost:1313/practice-2025/posts/my-first-post/</link>
-      <pubDate>Thu, 17 Apr 2025 01:42:42 +0300</pubDate>
-      <guid>http://localhost:1313/practice-2025/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;введение&#34;&gt;Введение&lt;/h2&gt;&#xA;&lt;p&gt;Это сайт уникальной социальной сети на основе MBTI&#xA;+++&#xA;author = &amp;ldquo;annamakarrenko&amp;rdquo;&#xA;title = &amp;ldquo;Первый пост&amp;rdquo;&#xA;date = &amp;ldquo;2025.04.17&amp;rdquo;&#xA;description = &amp;quot;&amp;quot;&#xA;tags = [&#xA;&amp;ldquo;tag-1&amp;rdquo;,&#xA;&amp;ldquo;tag-2&amp;rdquo;&#xA;]&#xA;categories = [&#xA;&amp;ldquo;category-1&amp;rdquo;,&#xA;&amp;ldquo;category-2&amp;rdquo;,&#xA;]&#xA;favorite = true/false&#xA;+++&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://practice-2025.github.io/practice-2025/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
