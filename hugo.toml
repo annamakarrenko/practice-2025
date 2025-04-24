@@ -1,4 +1,5 @@
 baseURL = 'https://annamakarrenko.github.io/practice-2025/'
+publishDir = 'public'
 languageCode = 'ru-ru'
 ignoreDrafts = false 
 theme   =   'ananke' 
