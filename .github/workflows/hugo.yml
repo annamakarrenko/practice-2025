@@ -2,36 +2,27 @@ name: Deploy Hugo Site
 
 on:
   push:
-    branches: [main]
-
-permissions:
-  contents: write  # Ключевое изменение!
-  pages: write
-  id-token: write
+    branches: [ "main" ]  # Триггер при пуше в main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive
-          
+          submodules: recursive  # Если используете темы как submodules
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.146.4'
+          hugo-version: 'latest'
           extended: true
-          
+
       - name: Build
-        run: hugo --minify --gc
-        
+        run: hugo --minify
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true  # Очищает историю деплоев
+          publish_dir: ./public  # Или ./docs, если изменили publishDir
