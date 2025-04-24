@@ -1,6 +1,6 @@
 baseURL = 'https://annamakarrenko.github.io/practice-2025/'
 languageCode = 'ru-ru'
-
+ignoreDrafts = false 
 theme   =   'ananke' 
 [outputs]
   home = ['HTML', 'RSS']
