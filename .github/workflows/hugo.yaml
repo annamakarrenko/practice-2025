@@ -3,14 +3,12 @@ name: Deploy Hugo
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
 
@@ -20,21 +18,12 @@ jobs:
           hugo-version: '0.146.4'
           extended: true
 
-      - name: Build info
-        run: |
-          echo "### Hugo version ###"
-          hugo version
-          echo "### Project structure ###"
-          ls -la
-          echo "### Themes ###"
-          ls -la themes/
-
-      - name: Build site
-        run: |
-          hugo --minify --gc
+      - name: Build
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          keep_files: false
