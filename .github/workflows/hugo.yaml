@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  HUGO_VERSION: '0.125.4'  # Стабильная версия
+  HUGO_VERSION: '0.146.4'  # Рекомендованная стабильная версия
 
 jobs:
   build:
@@ -27,10 +27,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Debug: Show directory structure
+      - name: Debug structure
         run: |
           ls -la
           ls -la themes/
+          cat config.toml || cat hugo.toml
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -38,10 +39,10 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Build with Hugo
+      - name: Build
         run: |
           hugo version
-          hugo --minify --gc --verbose --debug
+          hugo --minify --gc --verbose
           ls -la public/
 
       - name: Upload artifact
