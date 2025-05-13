@@ -2,7 +2,7 @@ name: Deploy Hugo Site
 
 on:
   push:
-    branches: [ "main" ]  # Триггер при пуше в main
+    branches: [ "main" ]  
 
 jobs:
   deploy:
@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive  # Если используете темы как submodules
-
+          submodules: recursive  
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -25,4 +24,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Или ./docs, если изменили publishDir
+          publish_dir: ./public  
