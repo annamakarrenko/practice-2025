@@ -5,7 +5,7 @@ title = 'О проекте'
 featured_image = "/images/journal/wiki.jpg"
 +++
 
-![Wiki Image](/static/images/journal/wiki.jpg)
+![Описание](/practice-2025/images/journal/wiki.jpg)
 
 <div class="page-title">
 <h1>{{ .Title }}</h1>
