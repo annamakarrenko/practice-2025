@@ -1,5 +1,6 @@
 +++
 date = '2025-04-24T23:04:22+03:00'
 draft = true
-title = 'Participants'
+title = 'Участники'
 +++
+

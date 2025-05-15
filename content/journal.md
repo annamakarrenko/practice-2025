@@ -1,5 +1,6 @@
 +++
-date = '2025-04-24T23:05:37+03:00'
-draft = true
-title = 'Journal'
+title = 'Журнал'
+featured_image = "/images/journal/wiki.jpg"
 +++
+
+![Описание изображения](/images/journal/wiki.jpg)

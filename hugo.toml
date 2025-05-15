@@ -31,3 +31,8 @@ theme   =   'ananke'
   name = "Ресурсы"
   url = "/resources/"
   weight = 5
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
