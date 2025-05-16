@@ -2,10 +2,8 @@
 date = '2025-04-24T23:04:02+03:00'
 draft = false
 title = 'О проекте'
-featured_image = "/images/journal/wiki.jpg"
+featured_image = "/images/about/mbti.png"
 +++
-
-![Описание](/practice-2025/images/journal/wiki.jpg)
 
 <div class="page-title">
 <h1>{{ .Title }}</h1>
@@ -25,6 +23,9 @@ featured_image = "/images/journal/wiki.jpg"
  Доработка окна регистрации  
  Создание плейсхолдеров и функциональных форм  
  Редактирование ошибок  
+
+![Страница Википедии](/practice-2025/images/journal/wiki.jpg)
+Это страница Википедии.
 
 ### 💾 База данных и бэкенд
 
