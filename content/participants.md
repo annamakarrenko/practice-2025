@@ -1,7 +1,7 @@
 +++
 title = 'Участники'
 draft = false
-featured_image = "practice-2025/static/images/participants/shapka.jpg"
+featured_image = "practice-2025/static/images/participants/sh.jpg"
 +++
 
 Участники проекта 'Уникальная русскоязычная социальная сеть на основе MBTI' поделены на **5 групп**, каждая из которых выполняет определенные задачи.
