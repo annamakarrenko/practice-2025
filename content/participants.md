@@ -1,5 +1,6 @@
 +++
 title = 'Участники'
+draft = false
 featured_image = "practice-2025/static/images/participants/shapka.jpg"
 +++
 

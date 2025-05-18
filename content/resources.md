@@ -1,5 +1,6 @@
 +++
 title = 'Ресурсы'
+draft = false
 featured_image = "practice-2025/static/images/resources/shapka.png"
 +++
 
