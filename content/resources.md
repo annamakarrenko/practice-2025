@@ -1,7 +1,7 @@
 +++
 title = 'Ресурсы'
 draft = false
-featured_image = "practice-2025/static/images/resources/shapka.png"
+featured_image = "/images/resources/shapka.png"
 +++
 
 Ссылка на организацию-партнёра:

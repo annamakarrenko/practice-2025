@@ -2,16 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/practice-2025/resources/</loc>
-    <lastmod>2025-04-24T23:06:06+03:00</lastmod>
+    <loc>http://localhost:1313/practice-2025/about/</loc>
+    <lastmod>2025-04-24T23:04:02+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/practice-2025/</loc>
-    <lastmod>2025-04-24T23:06:06+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/practice-2025/participants/</loc>
-    <lastmod>2025-04-24T23:04:22+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/practice-2025/about/</loc>
     <lastmod>2025-04-24T23:04:02+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/practice-2025/categories/</loc>
@@ -19,5 +13,9 @@
     <loc>http://localhost:1313/practice-2025/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/practice-2025/journal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/practice-2025/resources/</loc>
+  </url><url>
+    <loc>http://localhost:1313/practice-2025/participants/</loc>
   </url>
 </urlset>
