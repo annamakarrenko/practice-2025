@@ -1,8 +1,6 @@
 +++
-date = '2025-04-24T23:04:22+03:00'
-draft = true
 title = 'Участники'
-featured_image = "/images/participants/shapka.jpg"
+featured_image = "practice-2025/static/images/participants/shapka.jpg"
 +++
 
 Участники проекта 'Уникальная русскоязычная социальная сеть на основе MBTI' поделены на **5 групп**, каждая из которых выполняет определенные задачи.

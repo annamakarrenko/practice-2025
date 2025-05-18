@@ -19,7 +19,7 @@ featured_image = "/images/journal/journal.jpg"
 ![Интерфейс](/practice-2025/images/journal/wiki.png)  
 
 **21.04.2025**  
-Я посетила "Научно-технологический митап в НИТУ МИСИС"
+Я посетила "Научно-технологический митап в НИТУ МИСИС".  
 
 ![митап](/practice-2025/images/journal/2.png)  
 
@@ -28,6 +28,6 @@ featured_image = "/images/journal/journal.jpg"
 ![митап](/practice-2025/images/journal/3.png)  
 
 **23.04.2025 16:00**  
-Я посетила мастер-класс "Выключите SOC, мы теряем деньги!" компании Инфосистемы Джет  
+Я посетила мастер-класс "Выключите SOC, мы теряем деньги!" компании Инфосистемы Джет.  
 
 ![митап](/practice-2025/images/journal/4.jpg)  

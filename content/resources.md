@@ -1,8 +1,6 @@
 +++
-date = '2025-04-24T23:06:06+03:00'
-draft = true
 title = 'Ресурсы'
-featured_image = "/images/resources/shapka.png"
+featured_image = "practice-2025/static/images/resources/shapka.png"
 +++
 
 Ссылка на организацию-партнёра:
@@ -15,7 +13,7 @@ featured_image = "/images/resources/shapka.png"
 
 Использованные материалы:
 
-- [Статья: 16 типов личности: что такое тест MBTI и как он используется](https://externat.foxford.ru/polezno-znat/tipy-lichnosti-po-mbti)
+- [Статья "16 типов личности: что такое тест MBTI и как он используется"](https://externat.foxford.ru/polezno-znat/tipy-lichnosti-po-mbti)
 - Арнс Т. Size-specific adjustments to type designs. Ридинг, 2008. - 192 с.
 - Бек К. Экстремальное программирование: планирование. СПб: Питер, 2003. - 143 с.
 - Дунаев В.В. Базы данных. Язык SQL для студента. СПб.: BHV, 2007. - 320 с.
