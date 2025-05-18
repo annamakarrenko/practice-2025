@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/Lenovo user/network",
+	"sourceRoot": "C:/Users/Lenovo user/network/site",
 	"sources": [
 		"ananke/css/main.css"
 	],
