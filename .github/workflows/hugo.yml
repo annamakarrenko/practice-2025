@@ -1,29 +1,19 @@
 name: Deploy Hugo Site
-
-on:
-  push:
-    branches: [ "main" ]  
-
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive  
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+          submodules: true
+          path: 'site/themes/ananke'
+      - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - run: hugo --source site --minify
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  
-      - name: Clean
-        run: rm -rf public || true
+          publish_dir: ./site/public
