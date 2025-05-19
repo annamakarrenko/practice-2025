@@ -1,19 +1,31 @@
 name: Deploy Hugo Site
-on: push
+on:
+  push:
+    branches: [ "main" ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
-          path: 'site/themes/ananke'
-      - uses: peaceiris/actions-hugo@v2
+          submodules: recursive
+          path: 'site'  # Ключевое изменение!
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-      - run: hugo --source site --minify
-      - uses: peaceiris/actions-gh-pages@v3
+
+      - name: Build
+        working-directory: ./site
+        run: |
+          # Явно указываем путь к конфигу
+          hugo --config hugo.toml --minify \
+          --baseURL 'https://annamakarrenko.github.io/practice-2025/'
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site/public
