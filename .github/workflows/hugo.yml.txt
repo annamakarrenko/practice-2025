@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.125.7'  # Фиксируем версию
           extended: true
 
       - name: Build
@@ -28,14 +30,10 @@ jobs:
         env:
           HUGO_ENV: production
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site/public
-          keep_files: false
-      - name: Debug
-        working-directory: ./site
-        run: |
-          ls -la
-          cat hugo.toml
+          path: ./site/public
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
