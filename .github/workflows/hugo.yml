@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - uses: actions/checkout@v4
@@ -22,7 +24,7 @@ jobs:
 
       - name: Build
         working-directory: ./site
-        run: hugo --config hugo.toml --theme ananke --minify --baseURL 'https://annamakarrenko.github.io/practice-2025/'
+        run: hugo --minify --baseURL 'https://annamakarrenko.github.io/practice-2025/'
         env:
           HUGO_ENV: production
 
@@ -30,4 +32,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./site/public
+          keep_files: false
