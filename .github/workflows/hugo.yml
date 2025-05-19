@@ -22,12 +22,7 @@ jobs:
 
       - name: Build
         working-directory: ./site
-        run: |
-          hugo \
-            --config hugo.toml \
-            --theme ananke \  # Явное указание темы
-            --minify \
-            --baseURL 'https://annamakarrenko.github.io/practice-2025/'
+        run: hugo --config hugo.toml --theme ananke --minify --baseURL 'https://annamakarrenko.github.io/practice-2025/'
         env:
           HUGO_ENV: production
 
@@ -35,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Изменено с ./site/public
+          publish_dir: ./public
