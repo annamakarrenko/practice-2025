@@ -1,0 +1,44 @@
+﻿name: Hugo Site Deployment
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+      # Шаг 1: Загрузка кода
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # Шаг 2: Установка Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      # Шаг 3: Сборка сайта
+      - name: Build
+        working-directory: ./site
+        run: hugo --minify --baseURL 'https://annamakarrenko.github.io/practice-2025/'
+        env:
+          HUGO_ENV: production
+
+      # Шаг 4: Загрузка артефакта
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site/public
+
+      # Шаг 5: Деплой
+      - name: Deploy
+        uses: actions/deploy-pages@v4
