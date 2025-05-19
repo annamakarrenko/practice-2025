@@ -34,3 +34,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site/public
           keep_files: false
+      - name: Debug
+        working-directory: ./site
+        run: |
+          ls -la
+          cat hugo.toml
